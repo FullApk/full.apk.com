@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+<style>
+
+body, html {
+        min-width: 50%;
+        min-height: 50%;
+		 background-repeat: no-repeat;
+		 translate: no-translate;
+		 background-color: transparent;
+		 font-family: "Source Sans Pro", sans-serif;
+      }
+
+		h2, p, jod {
+		color-white;
+		}
+
+		.user_info {
+		color: white;
+		botom-color: black;
+		background-color: transparent;
+		font-color: white;
+		}
+		
+		.nada {
+		background-color: transparent;
+		color: white;
+		}
+		
+		dala {
+    font-size: 45px;
+ 	 margin-top: 10px;
+    text-align: center;
+		}
+		
+		
+		
+		
+		.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.0);
+
+    
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.0);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #C5C5C5;
+	margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #E25151;
+	 border-botom-radius: 5px;
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+
+	background: #E25151;
+	color: #fff;
+	border: 2px solid #B14141;
+	border-radius: 8px;
+	cursor: pointer;
+
+	float: right;
+}
+		
+</style>
+</head>
+<body>
+
+ 
+
+        </section>
+
+        <form action="enviar.php" method="post" class="form_contact">
+            <h2>Envia un mensaje</h2>
+            <div class="user_info">
+                <label for="names">Nombre</label>
+                <input class="nada" type="text" id="names" name="nombre" required>
+
+                <label for="phone">Telefono / Celular</label>
+                <input class="nada" type="text" id="phone" name="telefono">
+
+                <label for="email">Correo electronico</label>
+                <input class="nada" type="text" id="email" name="correo" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea class="nada" id="mensaje" name="mensaje" required></textarea>
+</div>
+<center center="auto">
+<div class="button"><input type="submit" value="Enviar Mensaje" id="btnSend"></div>
+            </div>
+        </form>
+
+    </section>
+
+</body>
+</html>
